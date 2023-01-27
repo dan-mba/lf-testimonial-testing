@@ -21,7 +21,7 @@ jobs:
     steps:
       # Create a temporary, uniquely named branch to push release info to
       - name: create temporary branch
-        uses: peterjgrainger/action-create-branch@v2.3.0
+        uses: peterjgrainger/action-create-branch@v2.4.0
         id: create-branch
         with:
           branch: "testimonial-from-${{ github.sha }}"
