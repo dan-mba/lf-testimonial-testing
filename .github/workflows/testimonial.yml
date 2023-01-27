@@ -43,7 +43,7 @@ jobs:
         id: issue-parser
         with:
           template-path: .github/ISSUE_TEMPLATE/testimonial.yml
-          body: ${{ github.event.issue.body }}
+          issue-body: ${{ github.event.issue.body }}
       - name: current date
         id: date
         uses: Kaven-Universe/github-action-current-date-time@v1
