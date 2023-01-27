@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   create-testimonial:
-    if: contains(github.event.issue.labels.*.name, 'testimonial')
+    if: contains(github.event.issue.title, 'Testimonial')
     runs-on: ubuntu-latest
     name: Create Testimonial
     steps:
