@@ -1,0 +1,22 @@
+{
+  "name": "lf-testimonial-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dan-mba/lf-testimonial-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dan-mba/lf-testimonial-testing/issues"
+  },
+  "homepage": "https://github.com/dan-mba/lf-testimonial-testing#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0"
+  }
+}
