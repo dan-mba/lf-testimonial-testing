@@ -51,7 +51,7 @@ jobs:
           mkdir -p data/${{ steps.issue-parser.outputs.issueparser_name }}/testimonials
       - name: create json file
         run: |
-          node .github/scripts/testimonial.js
+          node .github/scripts/testimonial.mjs
         env:
           FILE_NAME: "data/${{ steps.issue-parser.outputs.issueparser_name }}/testimonials/${{ github.actor }}.json"
           DATA_TITLE: ${{ steps.issue-parser.outputs.issueparser_title }}
