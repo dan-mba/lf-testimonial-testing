@@ -34,6 +34,11 @@ jobs:
         with:
           node-version: "18"
 
+      - name: echo issue
+        env:
+          ISSUE: ${{ github.event.issue }}
+        run: node .github/scripts/log.js
+
       # fetch branches and switch to the temporary branch
       - name: switch to new branch
         run: git fetch --all && git checkout --track origin/testimonial-from-${{ github.sha }}
