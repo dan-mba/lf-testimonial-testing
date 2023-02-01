@@ -38,7 +38,7 @@ jobs:
         run: |
           node .github/scripts/log.js
         env:
-          ISSUE: ${{ github.event.issue }}
+          ISSUE_TEXT: ${{ github.event.issue }}
 
       # fetch branches and switch to the temporary branch
       - name: switch to new branch
