@@ -36,9 +36,8 @@ jobs:
 
       - name: echo issue
         run: |
-          node .github/scripts/log.js
-        env:
-          ISSUE_TEXT: ${{ github.event }}
+          cat /github/workflow/event.json
+
 
       # fetch branches and switch to the temporary branch
       - name: switch to new branch
