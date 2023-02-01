@@ -36,7 +36,7 @@ jobs:
 
       - name: echo issue
         run: |
-          cat /github/workflow/event.json
+          cat $GITHUB_EVENT_PATH
 
 
       # fetch branches and switch to the temporary branch
